@@ -1,0 +1,33 @@
+
+  #menu-main-nav{
+    .menu-item-type-custom {
+      margin-top: 10px;
+      margin-right:20px;
+      float:right;  
+      a {
+        color:transparent;
+
+        &[href*="facebook"] {
+          background: url('../images/fb.svg') no-repeat center center;
+          background-size: contain;
+          height: 20px;
+          // height: auto;
+        }
+        &[href*="twitter"] {
+          background: url('../images/twitter.svg') no-repeat center center;
+          background-size: contain;
+          // width: 50px;
+          height: 32px;
+
+          margin-top: 0px;
+        }
+
+        &:hover {
+          opacity:0.5;
+        }
+      }
+    }
+    
+}
+  
+
