@@ -1176,50 +1176,46 @@ select {
   background-position: 97.5% center;
 }
 
-/* line 1, ../sass/modules/_landing.scss */
-#main {
+/* line 4, ../sass/modules/_landing.scss */
+body.home #main {
   width: 98%;
   margin: 0 1%;
 }
-
-/* line 6, ../sass/modules/_landing.scss */
-.seance-snapshots, .seance-main {
+/* line 9, ../sass/modules/_landing.scss */
+body.home .seance-snapshots, body.home .seance-main {
   overflow: hidden;
 }
-/* line 9, ../sass/modules/_landing.scss */
-.seance-snapshots img, .seance-main img {
+/* line 12, ../sass/modules/_landing.scss */
+body.home .seance-snapshots img, body.home .seance-main img {
   width: 100%;
   height: auto;
 }
-
-/* line 15, ../sass/modules/_landing.scss */
-.seance-snapshots {
+/* line 18, ../sass/modules/_landing.scss */
+body.home .seance-snapshots {
   width: 23.5%;
   margin-right: 2%;
   margin-bottom: 20px;
   float: left;
   height: 150px;
 }
-/* line 22, ../sass/modules/_landing.scss */
-.seance-snapshots:nth-of-type(4) {
+/* line 25, ../sass/modules/_landing.scss */
+body.home .seance-snapshots:nth-of-type(4) {
   float: right;
   margin-right: 0;
 }
-
-/* line 28, ../sass/modules/_landing.scss */
-.seance-main {
+/* line 31, ../sass/modules/_landing.scss */
+body.home .seance-main {
   width: 100%;
   max-height: 200px;
 }
-
-/* line 34, ../sass/modules/_landing.scss */
-header.header {
+/* line 37, ../sass/modules/_landing.scss */
+body.home header.header {
   height: 100vh;
   background: url("../images/ny.jpg") no-repeat center center;
   background-size: cover;
 }
-/* line 40, ../sass/modules/_landing.scss */
-header.header::after {
+/* line 43, ../sass/modules/_landing.scss */
+body.home header.header::after {
   content: 'Silk and Souls';
   position: absolute;
   top: 50%;
@@ -1227,62 +1223,59 @@ header.header::after {
   font-size: 100pt;
   color: #fff;
 }
-
-/* line 54, ../sass/modules/_landing.scss */
-nav {
+/* line 57, ../sass/modules/_landing.scss */
+body.home nav {
   width: 100%;
   background: #323944;
   color: #fff;
 }
-/* line 58, ../sass/modules/_landing.scss */
-nav.pagination {
+/* line 61, ../sass/modules/_landing.scss */
+body.home nav.pagination {
   display: none !important;
 }
-
-/* line 63, ../sass/modules/_landing.scss */
-article[id^='post'] {
+/* line 66, ../sass/modules/_landing.scss */
+body.home article[id^='post'] {
   background-color: initial;
   border-radius: initial;
   margin-bottom: 0;
   border: none;
   padding: 0;
 }
-/* line 73, ../sass/modules/_landing.scss */
-article[id^='post'] figcaption {
+/* line 76, ../sass/modules/_landing.scss */
+body.home article[id^='post'] figcaption {
   position: relative;
   top: -40px;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 81, ../sass/modules/_landing.scss */
-article[id^='post'] img {
+/* line 84, ../sass/modules/_landing.scss */
+body.home article[id^='post'] img {
   width: 100%;
   height: auto !important;
   max-height: 195px;
 }
-/* line 87, ../sass/modules/_landing.scss */
-article[id^='post'].feature {
+/* line 90, ../sass/modules/_landing.scss */
+body.home article[id^='post'].feature {
   margin-top: 12px;
   margin-bottom: 36px;
   overflow: hidden;
 }
-/* line 94, ../sass/modules/_landing.scss */
-article[id^='post'].feature img {
+/* line 97, ../sass/modules/_landing.scss */
+body.home article[id^='post'].feature img {
   height: auto;
   max-height: 600px;
 }
-/* line 99, ../sass/modules/_landing.scss */
-article[id^='post'].feature figcaption {
+/* line 102, ../sass/modules/_landing.scss */
+body.home article[id^='post'].feature figcaption {
   background: initial;
   top: 0;
 }
-
-/* line 128, ../sass/modules/_landing.scss */
-.collage {
+/* line 131, ../sass/modules/_landing.scss */
+body.home .collage {
   padding: 0;
 }
-/* line 134, ../sass/modules/_landing.scss */
-.collage a {
+/* line 137, ../sass/modules/_landing.scss */
+body.home .collage a {
   vertical-align: bottom;
   opacity: 0;
 }

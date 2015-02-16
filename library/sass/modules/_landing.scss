@@ -1,138 +1,142 @@
-#main {
-  @include container();
-}
 
+body.home {
 
-.seance-snapshots, .seance-main  {
-  
-  overflow:hidden;
-  img {
-    width:100%;
-    height:auto;
+  #main {
+    @include container();
   }
-}
 
-.seance-snapshots {
-  // height:186px;
-  width:23.5%;
-  margin-right:2%;
-  margin-bottom:20px;
-  float:left;
-  height:150px;
-  &:nth-of-type(4){
-    float:right;
-    margin-right:0;
-  }
-}
 
-.seance-main {
-  width:100%;
-  max-height:200px;
-}
-
-header {
-  &.header{
-
-    height:100vh;
-    background:url('../images/ny.jpg') no-repeat center center;
-    background-size: cover;
-
-    &::after {
-      content: 'Silk and Souls';
-      position: absolute;
-      // background: rgba(0,0,0,0.5);
-      top: 50%;
-      left:20%;
-      font-size:100pt;
-      // width:auto;
-      // height:auto;
-      color: $white;
-    }
-  }
-}
-
-nav {
-  width:100%;
-  background: $black;
-  color:$white;
-  &.pagination {
-    display:none !important;
-  }
-}
-
-article[id^='post'] {
- background-color:initial; 
- border-radius: initial; 
- margin-bottom: 0; 
- border: none; 
- padding:0;
-
- // Hide overflow to give illusion of sqaure thumbnails
-
- 
- figcaption {
-  // display:none;
-  position:relative;
-  top:-40px;
-  text-align: center;
-  background: rgba(0,0,0, 0.5);
- }
-
- img {
-  width:100%;
-  height:auto !important;
-  max-height: 195px;
- }
-
- &.feature {
-  // width:100% !important;
-    margin-top:12px;
-    // max-height: 600px;
-    margin-bottom:36px;
+  .seance-snapshots, .seance-main  {
+    
     overflow:hidden;
-
     img {
+      width:100%;
       height:auto;
-      max-height: 600px;
     }
+  }
 
-    figcaption {
-      background: initial;
-      top:0;
+  .seance-snapshots {
+    // height:186px;
+    width:23.5%;
+    margin-right:2%;
+    margin-bottom:20px;
+    float:left;
+    height:150px;
+    &:nth-of-type(4){
+      float:right;
+      margin-right:0;
     }
- }
+  }
 
-}
-h1 {
-  
-  // background: $black;
-  // color:$white;
-}
-#street-style-wrapper {
-  // position:relative;
-  // top:100px;
- 
-    // width: 975px;
-    // margin-top: 63px;
-  // max-height:400px;
-  // overflow:hidden;
-  // article {
-  //    max-height:473px;
-  //    // margin-top:-10px;
-  //   img {
-  //     height:100%
-  //   }
-  // }
-}
+  .seance-main {
+    width:100%;
+    max-height:200px;
+  }
 
-.collage {
-  padding:0;
-  // img {
-  //   vertical-align: bottom;
-  //   opacity:0;
-  // }
-  a {
-    vertical-align: bottom;
-    opacity:0;
+  header {
+    &.header{
+
+      height:100vh;
+      background:url('../images/ny.jpg') no-repeat center center;
+      background-size: cover;
+
+      &::after {
+        content: 'Silk and Souls';
+        position: absolute;
+        // background: rgba(0,0,0,0.5);
+        top: 50%;
+        left:20%;
+        font-size:100pt;
+        // width:auto;
+        // height:auto;
+        color: $white;
+      }
+    }
+  }
+
+  nav {
+    width:100%;
+    background: $black;
+    color:$white;
+    &.pagination {
+      display:none !important;
+    }
+  }
+
+  article[id^='post'] {
+   background-color:initial; 
+   border-radius: initial; 
+   margin-bottom: 0; 
+   border: none; 
+   padding:0;
+
+   // Hide overflow to give illusion of sqaure thumbnails
+
+   
+   figcaption {
+    // display:none;
+    position:relative;
+    top:-40px;
+    text-align: center;
+    background: rgba(0,0,0, 0.5);
+   }
+
+   img {
+    width:100%;
+    height:auto !important;
+    max-height: 195px;
+   }
+
+   &.feature {
+    // width:100% !important;
+      margin-top:12px;
+      // max-height: 600px;
+      margin-bottom:36px;
+      overflow:hidden;
+
+      img {
+        height:auto;
+        max-height: 600px;
+      }
+
+      figcaption {
+        background: initial;
+        top:0;
+      }
+   }
+
+  }
+  h1 {
+    
+    // background: $black;
+    // color:$white;
+  }
+  #street-style-wrapper {
+    // position:relative;
+    // top:100px;
+   
+      // width: 975px;
+      // margin-top: 63px;
+    // max-height:400px;
+    // overflow:hidden;
+    // article {
+    //    max-height:473px;
+    //    // margin-top:-10px;
+    //   img {
+    //     height:100%
+    //   }
+    // }
+  }
+
+  .collage {
+    padding:0;
+    // img {
+    //   vertical-align: bottom;
+    //   opacity:0;
+    // }
+    a {
+      vertical-align: bottom;
+      opacity:0;
+    }
   }
 }
