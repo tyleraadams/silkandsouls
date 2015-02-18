@@ -115,8 +115,6 @@ jQuery(document).ready(function($) {
    * You can remove this if you don't need it
   */
   loadGravatars();
-  $(window).load(function(){
-    $('.collage').removeWhitespace().collagePlus();
-  });
+  
 
 }); /* end of as page load scripts */

@@ -1,5 +1,12 @@
 
   #menu-main-nav{
+
+    width:100%;
+    background: $black;
+    color:$white;
+    // &.pagination {
+      // display:none !important;
+    // }
     .menu-item-type-custom {
       margin-top: 10px;
       margin-right:20px;

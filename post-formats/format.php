@@ -37,7 +37,7 @@
                   <?php
                     // the content (pretty self explanatory huh)
                     the_content();
-
+                    the_post_thumbnail('large');
                     /*
                      * Link Pages is used in case you have posts that are set to break into
                      * multiple pages. You can remove this if you don't plan on doing that.

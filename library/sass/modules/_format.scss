@@ -1,7 +1,12 @@
 
 body.single-post {
 
-
-
-  
+  background:none;
+  .wrap {
+    width:90% !important;
+  }
+  article {
+    border:none;
+    text-align: center;
+  }
 }
