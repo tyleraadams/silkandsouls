@@ -1290,6 +1290,133 @@ body.home .collage img {
   height: auto !important;
 }
 
+/* line 2, ../sass/modules/_categories-list.scss */
+body.archive {
+  background: none;
+}
+/* line 6, ../sass/modules/_categories-list.scss */
+body.archive .wrap {
+  width: 90% !important;
+}
+/* line 9, ../sass/modules/_categories-list.scss */
+body.archive article {
+  border: none;
+  text-align: center;
+}
+/* line 14, ../sass/modules/_categories-list.scss */
+body.archive #main {
+  width: 98%;
+  margin: 0 1%;
+}
+/* line 19, ../sass/modules/_categories-list.scss */
+body.archive .seance-snapshots, body.archive .seance-main {
+  overflow: hidden;
+}
+/* line 22, ../sass/modules/_categories-list.scss */
+body.archive .seance-snapshots img, body.archive .seance-main img {
+  width: 100%;
+  height: auto;
+}
+/* line 28, ../sass/modules/_categories-list.scss */
+body.archive .seance-snapshots {
+  width: 23.5%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  float: left;
+  height: 150px;
+}
+/* line 36, ../sass/modules/_categories-list.scss */
+body.archive .seance-snapshots:nth-of-type(4n+0) {
+  float: right;
+  margin-right: 0;
+}
+/* line 42, ../sass/modules/_categories-list.scss */
+body.archive .seance-main {
+  width: 100%;
+  max-height: 400px;
+}
+/* line 48, ../sass/modules/_categories-list.scss */
+body.archive header.header {
+  height: 100vh;
+  background: url("../images/ny.jpg") no-repeat center center;
+  background-size: cover;
+}
+/* line 54, ../sass/modules/_categories-list.scss */
+body.archive header.header::after {
+  content: 'Silk and Souls';
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  font-size: 100pt;
+  color: #fff;
+}
+/* line 68, ../sass/modules/_categories-list.scss */
+body.archive nav {
+  width: 100%;
+  background: #323944;
+  color: #fff;
+}
+/* line 72, ../sass/modules/_categories-list.scss */
+body.archive nav.pagination {
+  display: none !important;
+}
+/* line 77, ../sass/modules/_categories-list.scss */
+body.archive article[id^='post'] {
+  background-color: initial;
+  border-radius: initial;
+  margin-bottom: 0;
+  border: none;
+  padding: 0;
+}
+/* line 87, ../sass/modules/_categories-list.scss */
+body.archive article[id^='post'] figcaption {
+  position: relative;
+  top: -40px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 95, ../sass/modules/_categories-list.scss */
+body.archive article[id^='post'] img {
+  width: 100%;
+  height: auto !important;
+  max-height: 195px;
+}
+/* line 101, ../sass/modules/_categories-list.scss */
+body.archive article[id^='post'].feature {
+  margin-top: 12px;
+  margin-bottom: 36px;
+  overflow: hidden;
+}
+/* line 108, ../sass/modules/_categories-list.scss */
+body.archive article[id^='post'].feature img {
+  height: auto;
+  max-height: 600px;
+}
+/* line 113, ../sass/modules/_categories-list.scss */
+body.archive article[id^='post'].feature figcaption {
+  background: initial;
+  top: 0;
+}
+/* line 142, ../sass/modules/_categories-list.scss */
+body.archive .collage {
+  background: snow;
+  line-height: 0;
+  margin-top: 40px;
+  width: auto;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 4;
+  -moz-column-gap: 0px;
+  column-count: 4;
+  column-gap: 0px;
+}
+/* line 153, ../sass/modules/_categories-list.scss */
+body.archive .collage img {
+  width: 100% !important;
+  height: auto !important;
+}
+
 /* line 2, ../sass/modules/_format.scss */
 body.single-post {
   background: none;
@@ -1315,30 +1442,30 @@ footer.footer {
   background: #323944;
   color: #fff;
 }
-/* line 10, ../sass/modules/_nav.scss */
+/* line 11, ../sass/modules/_nav.scss */
 #menu-main-nav .menu-item-type-custom {
   margin-top: 10px;
   margin-right: 20px;
   float: right;
 }
-/* line 14, ../sass/modules/_nav.scss */
+/* line 15, ../sass/modules/_nav.scss */
 #menu-main-nav .menu-item-type-custom a {
   color: transparent;
 }
-/* line 17, ../sass/modules/_nav.scss */
+/* line 18, ../sass/modules/_nav.scss */
 #menu-main-nav .menu-item-type-custom a[href*="facebook"] {
   background: url("../images/fb.svg") no-repeat center center;
   background-size: contain;
   height: 20px;
 }
-/* line 23, ../sass/modules/_nav.scss */
+/* line 24, ../sass/modules/_nav.scss */
 #menu-main-nav .menu-item-type-custom a[href*="twitter"] {
   background: url("../images/twitter.svg") no-repeat center center;
   background-size: contain;
   height: 32px;
   margin-top: 0px;
 }
-/* line 32, ../sass/modules/_nav.scss */
+/* line 33, ../sass/modules/_nav.scss */
 #menu-main-nav .menu-item-type-custom a:hover {
   opacity: 0.5;
 }
