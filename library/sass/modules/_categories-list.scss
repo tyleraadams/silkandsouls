@@ -17,7 +17,6 @@ body.archive {
 
 
   .seance-snapshots, .seance-main  {
-    
     overflow:hidden;
     img {
       width:100%;
@@ -75,15 +74,14 @@ body.archive {
   }
 
   article[id^='post'] {
-   background-color:initial; 
-   border-radius: initial; 
-   margin-bottom: 0; 
-   border: none; 
+   background-color:initial;
+   border-radius: initial;
+   margin-bottom: 0;
+   border: none;
    padding:0;
 
    // Hide overflow to give illusion of sqaure thumbnails
 
-   
    figcaption {
     // display:none;
     position:relative;
@@ -118,14 +116,13 @@ body.archive {
 
   }
   h1 {
-    
+
     // background: $black;
     // color:$white;
   }
   #street-style-wrapper {
     // position:relative;
     // top:100px;
-   
       // width: 975px;
       // margin-top: 63px;
     // max-height:400px;
@@ -149,7 +146,7 @@ body.archive {
     -moz-column-count:    4;
     -moz-column-gap:      0px;
     column-count:         4;
-    column-gap:           0px;  
+    column-gap:           0px;
     img {
       width: 100% !important;
       height: auto !important;

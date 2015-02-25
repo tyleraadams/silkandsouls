@@ -1312,12 +1312,12 @@ body.archive #main {
 body.archive .seance-snapshots, body.archive .seance-main {
   overflow: hidden;
 }
-/* line 22, ../sass/modules/_categories-list.scss */
+/* line 21, ../sass/modules/_categories-list.scss */
 body.archive .seance-snapshots img, body.archive .seance-main img {
   width: 100%;
   height: auto;
 }
-/* line 28, ../sass/modules/_categories-list.scss */
+/* line 27, ../sass/modules/_categories-list.scss */
 body.archive .seance-snapshots {
   width: 23.5%;
   margin-right: 2%;
@@ -1326,23 +1326,23 @@ body.archive .seance-snapshots {
   float: left;
   height: 150px;
 }
-/* line 36, ../sass/modules/_categories-list.scss */
+/* line 35, ../sass/modules/_categories-list.scss */
 body.archive .seance-snapshots:nth-of-type(4n+0) {
   float: right;
   margin-right: 0;
 }
-/* line 42, ../sass/modules/_categories-list.scss */
+/* line 41, ../sass/modules/_categories-list.scss */
 body.archive .seance-main {
   width: 100%;
   max-height: 400px;
 }
-/* line 48, ../sass/modules/_categories-list.scss */
+/* line 47, ../sass/modules/_categories-list.scss */
 body.archive header.header {
   height: 100vh;
   background: url("../images/ny.jpg") no-repeat center center;
   background-size: cover;
 }
-/* line 54, ../sass/modules/_categories-list.scss */
+/* line 53, ../sass/modules/_categories-list.scss */
 body.archive header.header::after {
   content: 'Silk and Souls';
   position: absolute;
@@ -1351,17 +1351,17 @@ body.archive header.header::after {
   font-size: 100pt;
   color: #fff;
 }
-/* line 68, ../sass/modules/_categories-list.scss */
+/* line 67, ../sass/modules/_categories-list.scss */
 body.archive nav {
   width: 100%;
   background: #323944;
   color: #fff;
 }
-/* line 72, ../sass/modules/_categories-list.scss */
+/* line 71, ../sass/modules/_categories-list.scss */
 body.archive nav.pagination {
   display: none !important;
 }
-/* line 77, ../sass/modules/_categories-list.scss */
+/* line 76, ../sass/modules/_categories-list.scss */
 body.archive article[id^='post'] {
   background-color: initial;
   border-radius: initial;
@@ -1369,36 +1369,36 @@ body.archive article[id^='post'] {
   border: none;
   padding: 0;
 }
-/* line 87, ../sass/modules/_categories-list.scss */
+/* line 85, ../sass/modules/_categories-list.scss */
 body.archive article[id^='post'] figcaption {
   position: relative;
   top: -40px;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 95, ../sass/modules/_categories-list.scss */
+/* line 93, ../sass/modules/_categories-list.scss */
 body.archive article[id^='post'] img {
   width: 100%;
   height: auto !important;
   max-height: 195px;
 }
-/* line 101, ../sass/modules/_categories-list.scss */
+/* line 99, ../sass/modules/_categories-list.scss */
 body.archive article[id^='post'].feature {
   margin-top: 12px;
   margin-bottom: 36px;
   overflow: hidden;
 }
-/* line 108, ../sass/modules/_categories-list.scss */
+/* line 106, ../sass/modules/_categories-list.scss */
 body.archive article[id^='post'].feature img {
   height: auto;
   max-height: 600px;
 }
-/* line 113, ../sass/modules/_categories-list.scss */
+/* line 111, ../sass/modules/_categories-list.scss */
 body.archive article[id^='post'].feature figcaption {
   background: initial;
   top: 0;
 }
-/* line 142, ../sass/modules/_categories-list.scss */
+/* line 139, ../sass/modules/_categories-list.scss */
 body.archive .collage {
   background: snow;
   line-height: 0;
@@ -1411,7 +1411,7 @@ body.archive .collage {
   column-count: 4;
   column-gap: 0px;
 }
-/* line 153, ../sass/modules/_categories-list.scss */
+/* line 150, ../sass/modules/_categories-list.scss */
 body.archive .collage img {
   width: 100% !important;
   height: auto !important;

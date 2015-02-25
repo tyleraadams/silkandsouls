@@ -128,12 +128,6 @@ function bones_scripts_and_styles() {
 
 		// modernizr (without media query polyfill)
     wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
-		
-    // collagePlus
-    wp_register_script( 'jquery-collagePlus', get_stylesheet_directory_uri() . '/library/js/libs/jquery.collagePlus.min.js', array(), '0.3.3', false );
-    
-    //remove white space plugin for collagePlus
-    wp_register_script( 'jquery-removeWhitespace', get_stylesheet_directory_uri() . '/library/js/libs/jquery.removeWhitespace.min.js', array(), '0.3.3', false );
 
 		// register main stylesheet
 		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/stylesheets/style.css', array(), '', 'all' );
@@ -163,9 +157,6 @@ function bones_scripts_and_styles() {
 		*/
 		wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bones-js' );
-    wp_enqueue_script( 'jquery-removeWhitespace' );
-    wp_enqueue_script( 'jquery-collagePlus' );
-
 	}
 }
 
