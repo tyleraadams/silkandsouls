@@ -5,10 +5,9 @@
 				<div id="inner-content" class="wrap cf">
 
 						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-
 							<?php if (is_category()) { ?>
 								<h1 class="archive-title h2">
-									<span><?php _e( 'Posts Categorized:', 'bonestheme' ); ?></span> <?php single_cat_title(); ?>
+									</span> <?php single_cat_title(); ?>
 								</h1>
 
 							<?php } elseif (is_tag()) { ?>
@@ -40,28 +39,63 @@
 										<span><?php _e( 'Yearly Archives:', 'bonestheme' ); ?></span> <?php the_time('Y'); ?>
 									</h1>
 							<?php } ?>
-
+							<div class="cat-content">
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+
+							<?php if (single_cat_title('', false) == "photoshoot") {
+
+								$args = array( 'post_type' => 'attachment', 'posts_per_page' => 5, 'post_status' =>'any', 'post_parent' => $post->ID, 'orderby' => 'menu_order', 'order' => 'DESC' );
+		            			$attachments = get_posts( $args );
+		            			$thumb_ID = get_post_thumbnail_id( $post->ID );
+		              			if ( $attachments ) {
+			                		foreach ( $attachments as $attachment ) {
+				                		if ($attachment->ID == $thumb_ID ) {
+				                			$attachmentimage=wp_get_attachment_image_src( $attachment->ID, true );
+
+				                  	echo '<figure class="seance-main"><a href="'.esc_url(get_permalink()).'"> <img src="'.$attachmentimage[0] .  '"</a></figure>';
+				                } else {
+				                  $attachmentimage=wp_get_attachment_image_src( $attachment->ID, 'seance-snapshots' );
+
+				                  echo '<figure class="seance-snapshots"><a href="'.esc_url(get_permalink()).'"> <img src="'.$attachmentimage[0] .  '"</a></figure>';
+
+				                }
+			                }
+		              	}
+
+		              } elseif (single_cat_title('', false) == "street style") { ?>
+
+
+
+	          						<a class="street-style-img" href="<?php echo  esc_url(get_permalink()); ?>">
+	                				<?php if ( has_post_thumbnail() ) {
+	                  				the_post_thumbnail('small');
+	                				} ?>
+	              				</a>
+
+
+		            <?php }; ?>
+
+
+
+<!-- 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
 								<header class="entry-header article-header">
 
 									<h3 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 									<p class="byline entry-meta vcard">
-										<?php printf( __( 'Posted %1$s by %2$s', 'bonestheme' ),
+										<?php //printf( __( 'Posted %1$s by %2$s', 'bonestheme' ),
                   							     /* the time the post was published */
-                  							     '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
+                  							     //'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
                        								/* the author of the post */
-                       								'<span class="by">by</span> <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>'
-                    							); ?>
+                       								//'<span class="by">by</span> <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span> ?>
 									</p>
 
 								</header>
 
 								<section class="entry-content cf">
 
-									<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
+									<?php //the_post_thumbnail( 'bones-thumb-300' ); ?>
 
 									<?php the_excerpt(); ?>
 
@@ -71,10 +105,10 @@
 
 								</footer>
 
-							</article>
+							</article> -->
 
 							<?php endwhile; ?>
-
+							</div>
 									<?php bones_page_navi(); ?>
 
 							<?php else : ?>
