@@ -6,7 +6,8 @@
     <div id="inner-content" class="">
       <main id="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
        <!-- THE LOOP FOR PHOTOSHOOT CATEGORY POSTS -->
-        <?php  $query = new WP_Query(  array('cat' =>  6, 'posts_per_page'=> 1 ));
+
+        <?php  $query = new WP_Query(  array('category_name' =>  'photoshoot', 'posts_per_page'=> 1 ));
           if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
            //echo $post->ID ;
         ?>
@@ -25,7 +26,6 @@
                   echo '<figure class="seance-main"><a href="'.esc_url(get_permalink()).'"> <img src="'.$attachmentimage[0] .  '"</a></figure>';
                   } else {
                   $attachmentimage=wp_get_attachment_image_src( $attachment->ID, 'seance-snapshots' );
-
                   echo '<figure class="seance-snapshots"><a href="'.esc_url(get_permalink()).'"> <img src="'.$attachmentimage[0] .  '"</a></figure>';
 
                   }
@@ -42,7 +42,8 @@
         <!-- <div class="street-style-wrapper"> -->
         <div class="collage">
 
-        <?php  $query = new WP_Query(  array('cat' =>  7, 'posts_per_page'=> 6 ));
+
+        <?php  $query = new WP_Query(  array('category_name' =>  'street-style', 'posts_per_page'=> 6 ));
           if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
 
             <!-- <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article"> -->
@@ -64,11 +65,11 @@
       <!-- </div> -->
 
 
-      <?php  $query = new WP_Query(  array('cat' =>  6, 'posts_per_page'=> 1, 'offset'=>1 ));
+
+      <?php  $query = new WP_Query(  array('category_name' =>  'photoshoot', 'posts_per_page'=> 1, 'offset'=>1 ));
           if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post();
            //echo $post->ID ;
         ?>
-
 
         <!-- SUBLOOP FOR ALL ATTACHED IMAGES IN THE PHOTOSHOOT CAT -->
           <?php
@@ -99,7 +100,7 @@
              <!-- <div class="street-style-wrapper"> -->
         <div class="collage">
 
-        <?php  $query = new WP_Query(  array('cat' =>  7, 'posts_per_page'=> 6, 'offset'=>6 ));
+        <?php  $query = new WP_Query(  array('category_name' =>  'street-style', 'posts_per_page'=> 6, 'offset'=>6 ));
           if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
 
             <!-- <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article"> -->
@@ -110,7 +111,6 @@
                 <?php if ( has_post_thumbnail() ) {
                   the_post_thumbnail('small');
                 } ?>
-
               </a>
           <?php endwhile; ?>
 
