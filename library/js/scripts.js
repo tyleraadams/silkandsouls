@@ -104,7 +104,15 @@ function loadGravatars() {
 	}
 } // end function
 
-
+function handleStreetStyleCat() {
+  if (window && window.location && window.location.search && window.location) {
+    var query = window.location.search.substring(1);
+    if (query === "cat=7") {
+      var container = document.querySelector('.cat-content');
+      container.classList.add('collage');
+    }
+  }
+}
 /*
  * Put all your regular jQuery in here.
 */
@@ -115,14 +123,8 @@ jQuery(document).ready(function($) {
    * You can remove this if you don't need it
   */
   loadGravatars();
+  handleStreetStyleCat();
 
-  if (window && window.location && window.location.search && window.location) {
-    var query = window.location.search.substring(1);
-    if (query === "cat=7") {
-      var container = document.querySelector('.cat-content');
-      container.classList.add('collage');
-    }
-  }
 
 
 }); /* end of as page load scripts */

@@ -611,7 +611,7 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
-/* line 65, ../sass/partials/_typography.scss */
+/* line 66, ../sass/partials/_typography.scss */
 p {
   -ms-word-wrap: break-word;
   word-break: break-word;
@@ -922,7 +922,7 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Alegreya Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #eaedf2;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out;
@@ -1493,7 +1493,7 @@ GENERAL STYLES
 *********************/
 /* line 18, ../sass/breakpoints/_base.scss */
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Alegreya Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
