@@ -11,7 +11,7 @@
     .menu-item-type-custom {
       margin-top: 10px;
       margin-right:20px;
-      float:right;  
+      float:right;
       a {
         color:transparent;
 
@@ -29,13 +29,21 @@
 
           margin-top: 0px;
         }
+        &[href*="instagram"] {
+          background: url('../images/instagram-white.svg') no-repeat center center;
+          background-size: contain;
+          // width: 50px;
+          height: 24px;
+
+          margin-top: 0px;
+        }
 
         &:hover {
           opacity:0.5;
         }
       }
     }
-    
+
 }
-  
+
 

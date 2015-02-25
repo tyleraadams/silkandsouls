@@ -3,6 +3,12 @@ body.archive {
 
 
   background:none;
+
+  .archive-title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size:36px;
+  }
   .wrap {
     width:90% !important;
   }
@@ -115,27 +121,6 @@ body.archive {
    }
 
   }
-  h1 {
-
-    // background: $black;
-    // color:$white;
-  }
-  #street-style-wrapper {
-    // position:relative;
-    // top:100px;
-      // width: 975px;
-      // margin-top: 63px;
-    // max-height:400px;
-    // overflow:hidden;
-    // article {
-    //    max-height:473px;
-    //    // margin-top:-10px;
-    //   img {
-    //     height:100%
-    //   }
-    // }
-  }
-
   .collage {
     background:snow;
     line-height: 0;
@@ -151,5 +136,10 @@ body.archive {
       width: 100% !important;
       height: auto !important;
     }
+  }
+
+  article.portraits {
+    width:33%;
+    display:inline-block;
   }
 }

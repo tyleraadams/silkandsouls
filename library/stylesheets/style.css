@@ -1294,30 +1294,36 @@ body.home .collage img {
 body.archive {
   background: none;
 }
-/* line 6, ../sass/modules/_categories-list.scss */
+/* line 7, ../sass/modules/_categories-list.scss */
+body.archive .archive-title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 36px;
+}
+/* line 12, ../sass/modules/_categories-list.scss */
 body.archive .wrap {
   width: 90% !important;
 }
-/* line 9, ../sass/modules/_categories-list.scss */
+/* line 15, ../sass/modules/_categories-list.scss */
 body.archive article {
   border: none;
   text-align: center;
 }
-/* line 14, ../sass/modules/_categories-list.scss */
+/* line 20, ../sass/modules/_categories-list.scss */
 body.archive #main {
   width: 98%;
   margin: 0 1%;
 }
-/* line 19, ../sass/modules/_categories-list.scss */
+/* line 25, ../sass/modules/_categories-list.scss */
 body.archive .seance-snapshots, body.archive .seance-main {
   overflow: hidden;
 }
-/* line 21, ../sass/modules/_categories-list.scss */
+/* line 27, ../sass/modules/_categories-list.scss */
 body.archive .seance-snapshots img, body.archive .seance-main img {
   width: 100%;
   height: auto;
 }
-/* line 27, ../sass/modules/_categories-list.scss */
+/* line 33, ../sass/modules/_categories-list.scss */
 body.archive .seance-snapshots {
   width: 23.5%;
   margin-right: 2%;
@@ -1326,23 +1332,23 @@ body.archive .seance-snapshots {
   float: left;
   height: 150px;
 }
-/* line 35, ../sass/modules/_categories-list.scss */
+/* line 41, ../sass/modules/_categories-list.scss */
 body.archive .seance-snapshots:nth-of-type(4n+0) {
   float: right;
   margin-right: 0;
 }
-/* line 41, ../sass/modules/_categories-list.scss */
+/* line 47, ../sass/modules/_categories-list.scss */
 body.archive .seance-main {
   width: 100%;
   max-height: 400px;
 }
-/* line 47, ../sass/modules/_categories-list.scss */
+/* line 53, ../sass/modules/_categories-list.scss */
 body.archive header.header {
   height: 100vh;
   background: url("../images/ny.jpg") no-repeat center center;
   background-size: cover;
 }
-/* line 53, ../sass/modules/_categories-list.scss */
+/* line 59, ../sass/modules/_categories-list.scss */
 body.archive header.header::after {
   content: 'Silk and Souls';
   position: absolute;
@@ -1351,17 +1357,17 @@ body.archive header.header::after {
   font-size: 100pt;
   color: #fff;
 }
-/* line 67, ../sass/modules/_categories-list.scss */
+/* line 73, ../sass/modules/_categories-list.scss */
 body.archive nav {
   width: 100%;
   background: #323944;
   color: #fff;
 }
-/* line 71, ../sass/modules/_categories-list.scss */
+/* line 77, ../sass/modules/_categories-list.scss */
 body.archive nav.pagination {
   display: none !important;
 }
-/* line 76, ../sass/modules/_categories-list.scss */
+/* line 82, ../sass/modules/_categories-list.scss */
 body.archive article[id^='post'] {
   background-color: initial;
   border-radius: initial;
@@ -1369,36 +1375,36 @@ body.archive article[id^='post'] {
   border: none;
   padding: 0;
 }
-/* line 85, ../sass/modules/_categories-list.scss */
+/* line 91, ../sass/modules/_categories-list.scss */
 body.archive article[id^='post'] figcaption {
   position: relative;
   top: -40px;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 93, ../sass/modules/_categories-list.scss */
+/* line 99, ../sass/modules/_categories-list.scss */
 body.archive article[id^='post'] img {
   width: 100%;
   height: auto !important;
   max-height: 195px;
 }
-/* line 99, ../sass/modules/_categories-list.scss */
+/* line 105, ../sass/modules/_categories-list.scss */
 body.archive article[id^='post'].feature {
   margin-top: 12px;
   margin-bottom: 36px;
   overflow: hidden;
 }
-/* line 106, ../sass/modules/_categories-list.scss */
+/* line 112, ../sass/modules/_categories-list.scss */
 body.archive article[id^='post'].feature img {
   height: auto;
   max-height: 600px;
 }
-/* line 111, ../sass/modules/_categories-list.scss */
+/* line 117, ../sass/modules/_categories-list.scss */
 body.archive article[id^='post'].feature figcaption {
   background: initial;
   top: 0;
 }
-/* line 139, ../sass/modules/_categories-list.scss */
+/* line 124, ../sass/modules/_categories-list.scss */
 body.archive .collage {
   background: snow;
   line-height: 0;
@@ -1411,10 +1417,15 @@ body.archive .collage {
   column-count: 4;
   column-gap: 0px;
 }
-/* line 150, ../sass/modules/_categories-list.scss */
+/* line 135, ../sass/modules/_categories-list.scss */
 body.archive .collage img {
   width: 100% !important;
   height: auto !important;
+}
+/* line 141, ../sass/modules/_categories-list.scss */
+body.archive article.portraits {
+  width: 33%;
+  display: inline-block;
 }
 
 /* line 2, ../sass/modules/_format.scss */
@@ -1465,7 +1476,14 @@ footer.footer {
   height: 32px;
   margin-top: 0px;
 }
-/* line 33, ../sass/modules/_nav.scss */
+/* line 32, ../sass/modules/_nav.scss */
+#menu-main-nav .menu-item-type-custom a[href*="instagram"] {
+  background: url("../images/instagram-white.svg") no-repeat center center;
+  background-size: contain;
+  height: 24px;
+  margin-top: 0px;
+}
+/* line 41, ../sass/modules/_nav.scss */
 #menu-main-nav .menu-item-type-custom a:hover {
   opacity: 0.5;
 }
