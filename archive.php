@@ -43,7 +43,7 @@
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
-							<?php if (single_cat_title('', false) == "photoshoot") {
+							<?php if (single_cat_title('', false) == "Photoshoot") {
 
 								$args = array( 'post_type' => 'attachment', 'posts_per_page' => 5, 'post_status' =>'any', 'post_parent' => $post->ID, 'orderby' => 'menu_order', 'order' => 'DESC' );
 		            			$attachments = get_posts( $args );
@@ -63,7 +63,7 @@
 			                }
 		              	}
 
-		              } elseif (single_cat_title('', false) == "street style") { ?>
+		              } elseif (single_cat_title('', false) == "Street Style") { ?>
 
 
 
@@ -74,28 +74,19 @@
 	              				</a>
 
 
-		            <?php }; ?>
+		            <?php } elseif (single_cat_title('', false) == "Portrait" || single_cat_title('', false) == "Profile" || single_cat_title('', false) == "Investigation") { ?>
 
-
-
-<!-- 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+						<article class="portraits" id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
 								<header class="entry-header article-header">
-
 									<h3 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									<p class="byline entry-meta vcard">
-										<?php //printf( __( 'Posted %1$s by %2$s', 'bonestheme' ),
-                  							     /* the time the post was published */
-                  							     //'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
-                       								/* the author of the post */
-                       								//'<span class="by">by</span> <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span> ?>
-									</p>
+
 
 								</header>
 
 								<section class="entry-content cf">
 
-									<?php //the_post_thumbnail( 'bones-thumb-300' ); ?>
+									<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
 
 									<?php the_excerpt(); ?>
 
@@ -105,8 +96,8 @@
 
 								</footer>
 
-							</article> -->
-
+							</article>
+							<?php }; ?>
 							<?php endwhile; ?>
 							</div>
 									<?php bones_page_navi(); ?>
