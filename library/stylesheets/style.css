@@ -1436,6 +1436,133 @@ body.archive article.portraits {
   display: inline-block;
 }
 
+/* line 2, ../sass/modules/_page.scss */
+body.page {
+  background: none;
+}
+/* line 7, ../sass/modules/_page.scss */
+body.page .archive-title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 36px;
+}
+/* line 12, ../sass/modules/_page.scss */
+body.page .wrap {
+  width: 90% !important;
+}
+/* line 15, ../sass/modules/_page.scss */
+body.page article {
+  border: none;
+  text-align: center;
+}
+/* line 20, ../sass/modules/_page.scss */
+body.page #main {
+  width: 98%;
+  margin: 0 1%;
+}
+/* line 25, ../sass/modules/_page.scss */
+body.page .seance-snapshots, body.page .seance-main {
+  overflow: hidden;
+}
+/* line 27, ../sass/modules/_page.scss */
+body.page .seance-snapshots img, body.page .seance-main img {
+  width: 100%;
+  height: auto;
+}
+/* line 33, ../sass/modules/_page.scss */
+body.page .seance-snapshots {
+  width: 23.5%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  float: left;
+  height: 150px;
+}
+/* line 41, ../sass/modules/_page.scss */
+body.page .seance-snapshots:nth-of-type(4n+0) {
+  float: right;
+  margin-right: 0;
+}
+/* line 47, ../sass/modules/_page.scss */
+body.page .seance-main {
+  width: 100%;
+  max-height: 400px;
+}
+/* line 53, ../sass/modules/_page.scss */
+body.page header.header {
+  display: none;
+}
+/* line 73, ../sass/modules/_page.scss */
+body.page nav {
+  width: 100%;
+  background: #323944;
+  color: #fff;
+}
+/* line 77, ../sass/modules/_page.scss */
+body.page nav.pagination {
+  display: none !important;
+}
+/* line 82, ../sass/modules/_page.scss */
+body.page article[id^='post'] {
+  background-color: initial;
+  border-radius: initial;
+  margin-bottom: 0;
+  border: none;
+  padding: 0;
+}
+/* line 91, ../sass/modules/_page.scss */
+body.page article[id^='post'] figcaption {
+  position: relative;
+  top: -40px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 99, ../sass/modules/_page.scss */
+body.page article[id^='post'] img {
+  width: 100%;
+  height: auto !important;
+  max-height: 195px;
+}
+/* line 105, ../sass/modules/_page.scss */
+body.page article[id^='post'].feature {
+  margin-top: 12px;
+  margin-bottom: 36px;
+  overflow: hidden;
+}
+/* line 112, ../sass/modules/_page.scss */
+body.page article[id^='post'].feature img {
+  height: auto;
+  max-height: 600px;
+}
+/* line 117, ../sass/modules/_page.scss */
+body.page article[id^='post'].feature figcaption {
+  background: initial;
+  top: 0;
+}
+/* line 124, ../sass/modules/_page.scss */
+body.page .collage {
+  background: snow;
+  line-height: 0;
+  margin-top: 40px;
+  width: auto;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 4;
+  -moz-column-gap: 0px;
+  column-count: 4;
+  column-gap: 0px;
+}
+/* line 135, ../sass/modules/_page.scss */
+body.page .collage img {
+  width: 100% !important;
+  height: auto !important;
+}
+/* line 141, ../sass/modules/_page.scss */
+body.page article.portraits {
+  width: 33%;
+  display: inline-block;
+}
+
 /* line 2, ../sass/modules/_format.scss */
 body.single-post {
   background: none;
