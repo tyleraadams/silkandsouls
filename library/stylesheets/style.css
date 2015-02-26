@@ -1212,29 +1212,48 @@ body.home .seance-main {
 /* line 38, ../sass/modules/_landing.scss */
 body.home header.header {
   height: 100vh;
-  background: url("../images/ny.jpg") no-repeat center center;
+  background: url("../images/walking-girl.jpg") no-repeat center center;
   background-size: cover;
+  position: relative;
+  z-index: -2;
 }
-/* line 44, ../sass/modules/_landing.scss */
-body.home header.header::after {
-  content: 'Silk and Souls';
+/* line 46, ../sass/modules/_landing.scss */
+body.home header.header h1#logo {
+  font-size: 200px;
+  color: white;
+  text-align: center;
+  margin: 0;
   position: absolute;
   top: 50%;
-  left: 20%;
-  font-size: 100pt;
-  color: #fff;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-weight: 600;
 }
-/* line 58, ../sass/modules/_landing.scss */
+/* line 60, ../sass/modules/_landing.scss */
+body.home header.header .image-filter {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 100pt;
+  z-index: -1;
+}
+/* line 81, ../sass/modules/_landing.scss */
 body.home nav {
   width: 100%;
   background: #323944;
   color: #fff;
 }
-/* line 62, ../sass/modules/_landing.scss */
+/* line 85, ../sass/modules/_landing.scss */
 body.home nav.pagination {
   display: none !important;
 }
-/* line 67, ../sass/modules/_landing.scss */
+/* line 90, ../sass/modules/_landing.scss */
 body.home article[id^='post'] {
   background-color: initial;
   border-radius: initial;
@@ -1242,36 +1261,36 @@ body.home article[id^='post'] {
   border: none;
   padding: 0;
 }
-/* line 77, ../sass/modules/_landing.scss */
+/* line 100, ../sass/modules/_landing.scss */
 body.home article[id^='post'] figcaption {
   position: relative;
   top: -40px;
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 85, ../sass/modules/_landing.scss */
+/* line 108, ../sass/modules/_landing.scss */
 body.home article[id^='post'] img {
   width: 100%;
   height: auto !important;
   max-height: 195px;
 }
-/* line 91, ../sass/modules/_landing.scss */
+/* line 114, ../sass/modules/_landing.scss */
 body.home article[id^='post'].feature {
   margin-top: 12px;
   margin-bottom: 36px;
   overflow: hidden;
 }
-/* line 98, ../sass/modules/_landing.scss */
+/* line 121, ../sass/modules/_landing.scss */
 body.home article[id^='post'].feature img {
   height: auto;
   max-height: 600px;
 }
-/* line 103, ../sass/modules/_landing.scss */
+/* line 126, ../sass/modules/_landing.scss */
 body.home article[id^='post'].feature figcaption {
   background: initial;
   top: 0;
 }
-/* line 132, ../sass/modules/_landing.scss */
+/* line 155, ../sass/modules/_landing.scss */
 body.home .collage {
   background: snow;
   line-height: 0;
@@ -1284,7 +1303,7 @@ body.home .collage {
   column-count: 4;
   column-gap: 0px;
 }
-/* line 143, ../sass/modules/_landing.scss */
+/* line 166, ../sass/modules/_landing.scss */
 body.home .collage img {
   width: 100% !important;
   height: auto !important;
@@ -1344,18 +1363,7 @@ body.archive .seance-main {
 }
 /* line 53, ../sass/modules/_categories-list.scss */
 body.archive header.header {
-  height: 100vh;
-  background: url("../images/ny.jpg") no-repeat center center;
-  background-size: cover;
-}
-/* line 59, ../sass/modules/_categories-list.scss */
-body.archive header.header::after {
-  content: 'Silk and Souls';
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  font-size: 100pt;
-  color: #fff;
+  display: none;
 }
 /* line 73, ../sass/modules/_categories-list.scss */
 body.archive nav {
@@ -1432,11 +1440,15 @@ body.archive article.portraits {
 body.single-post {
   background: none;
 }
-/* line 5, ../sass/modules/_format.scss */
+/* line 3, ../sass/modules/_format.scss */
+body.single-post header {
+  display: none;
+}
+/* line 7, ../sass/modules/_format.scss */
 body.single-post .wrap {
   width: 90% !important;
 }
-/* line 8, ../sass/modules/_format.scss */
+/* line 10, ../sass/modules/_format.scss */
 body.single-post article {
   border: none;
   text-align: center;

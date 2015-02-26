@@ -51,22 +51,22 @@ body.archive {
 
   header {
     &.header{
+      display:none;
+      // height:100vh;
+      // background:url('../images/ny.jpg') no-repeat center center;
+      // background-size: cover;
 
-      height:100vh;
-      background:url('../images/ny.jpg') no-repeat center center;
-      background-size: cover;
-
-      &::after {
-        content: 'Silk and Souls';
-        position: absolute;
-        // background: rgba(0,0,0,0.5);
-        top: 50%;
-        left:20%;
-        font-size:100pt;
-        // width:auto;
-        // height:auto;
-        color: $white;
-      }
+      // &::after {
+      //   content: 'Silk and Souls';
+      //   position: absolute;
+      //   // background: rgba(0,0,0,0.5);
+      //   top: 50%;
+      //   left:20%;
+      //   font-size:100pt;
+      //   // width:auto;
+      //   // height:auto;
+      //   color: $white;
+      // }
     }
   }
 
