@@ -44,7 +44,7 @@
         <div class="collage">
 
 
-        <?php  $query = new WP_Query(  array('category_name' =>  'street-style', 'posts_per_page'=> 6 ));
+        <?php  $query = new WP_Query(  array('category_name' =>  'street-style, Street Style', 'posts_per_page'=> 6 ));
           if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
 
             <!-- <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article"> -->
@@ -73,19 +73,19 @@
         ?>
 
         <!-- SUBLOOP FOR ALL ATTACHED IMAGES IN THE PHOTOSHOOT CAT -->
-          <?php
-            $args = array( 'post_type' => 'attachment', 'posts_per_page' => -1, 'post_status' =>'any', 'post_parent' => $post->ID, 'orderby' => 'menu_order', 'order' => 'DESC' );
+        <?php
+            $args = array( 'post_type' => 'attachment', 'posts_per_page' => 5, 'post_status' =>'any', 'post_parent' => $post->ID, 'orderby' => 'menu_order', 'order' => 'DESC' );
             $attachments = get_posts( $args );
-            $thumb_ID = get_post_thumbnail_id( $post->ID );
+            // $thumb_ID = get_post_thumbnail_id( $post->ID );
               if ( $attachments ) {
+                $i = 0;
                 foreach ( $attachments as $attachment ) {
-                  if ($attachment->ID == $thumb_ID ) {
+                  if ( ++$i === 5/*$attachment->ID == $thumb_ID */) {
                     $attachmentimage=wp_get_attachment_image_src( $attachment->ID, true );
 
                   echo '<figure class="seance-main"><a href="'.esc_url(get_permalink()).'"> <img src="'.$attachmentimage[0] .  '"</a></figure>';
                   } else {
                   $attachmentimage=wp_get_attachment_image_src( $attachment->ID, 'seance-snapshots' );
-
                   echo '<figure class="seance-snapshots"><a href="'.esc_url(get_permalink()).'"> <img src="'.$attachmentimage[0] .  '"</a></figure>';
 
                   }
