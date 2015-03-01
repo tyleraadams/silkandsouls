@@ -1429,8 +1429,9 @@ body.archive .collage {
 body.archive .collage img {
   width: 100% !important;
   height: auto !important;
+  vertical-align: top;
 }
-/* line 141, ../sass/modules/_categories-list.scss */
+/* line 142, ../sass/modules/_categories-list.scss */
 body.archive article.portraits {
   width: 33%;
   display: inline-block;
