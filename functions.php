@@ -76,6 +76,7 @@ if ( ! isset( $content_width ) ) {
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
 add_image_size( 'seance-snapshots', 288, 288, true );
+add_image_size( 'seance-main', 800, 200, true );
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you

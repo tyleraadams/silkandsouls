@@ -22,7 +22,7 @@
                 $i = 0;
                 foreach ( $attachments as $attachment ) {
                   if ( ++$i === 5/*$attachment->ID == $thumb_ID */) {
-                    $attachmentimage=wp_get_attachment_image_src( $attachment->ID, true );
+                    $attachmentimage=wp_get_attachment_image_src( $attachment->ID, 'seance-main' );
 
                   echo '<figure class="seance-main"><a href="'.esc_url(get_permalink()).'"> <img src="'.$attachmentimage[0] .  '"</a></figure>';
                   } else {
@@ -81,7 +81,7 @@
                 $i = 0;
                 foreach ( $attachments as $attachment ) {
                   if ( ++$i === 5/*$attachment->ID == $thumb_ID */) {
-                    $attachmentimage=wp_get_attachment_image_src( $attachment->ID, true );
+                    $attachmentimage=wp_get_attachment_image_src( $attachment->ID, 'seance-main' );
 
                   echo '<figure class="seance-main"><a href="'.esc_url(get_permalink()).'"> <img src="'.$attachmentimage[0] .  '"</a></figure>';
                   } else {
