@@ -44,7 +44,7 @@
         <div class="collage">
 
 
-        <?php  $query = new WP_Query(  array('category_name' =>  'street-style, Street Style', 'posts_per_page'=> 6 ));
+        <?php  $query = new WP_Query(  array('category_name' =>  'street-style, Street Style', 'posts_per_page'=> 8 ));
           if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
 
             <!-- <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article"> -->
@@ -53,7 +53,8 @@
               <!-- <figure class='snapshot-wrapper'> -->
               <a href="<?php echo  esc_url(get_permalink()); ?>">
                 <?php if ( has_post_thumbnail() ) {
-                  the_post_thumbnail('small');
+                  $pickbetween = array('street-style-tall', 'street-style-short');
+                  the_post_thumbnail(shuffle($pickbetween)[0]);
                 } ?>
 
               </a>
@@ -101,7 +102,7 @@
              <!-- <div class="street-style-wrapper"> -->
         <div class="collage">
 
-        <?php  $query = new WP_Query(  array('category_name' =>  'street-style', 'posts_per_page'=> 6, 'offset'=>6 ));
+        <?php  $query = new WP_Query(  array('category_name' =>  'street-style', 'posts_per_page'=> 8, 'offset'=>8 ));
           if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
 
             <!-- <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article"> -->
@@ -110,8 +111,12 @@
               <!-- <figure class='snapshot-wrapper'> -->
               <a href="<?php echo  esc_url(get_permalink()); ?>">
                 <?php if ( has_post_thumbnail() ) {
-                  the_post_thumbnail('small');
+                  $pickbetween = array('street-style-tall', 'street-style-short');
+
+                  the_post_thumbnail(shuffle($pickbetween)[0]);
                 } ?>
+
+              </a>>
               </a>
           <?php endwhile; ?>
 
