@@ -43,7 +43,7 @@
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
-							<?php if (single_cat_title('', false) == "Photoshoot") {
+							<?php if (single_cat_title('', false) == "Photoshoot" || single_cat_title('', false) == "photoshoot") {
 
 								$args = array( 'post_type' => 'attachment', 'posts_per_page' => 5, 'post_status' =>'any', 'post_parent' => $post->ID, 'orderby' => 'menu_order', 'order' => 'DESC' );
 		            			$attachments = get_posts( $args );
