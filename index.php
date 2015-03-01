@@ -17,10 +17,11 @@
           <?php
             $args = array( 'post_type' => 'attachment', 'posts_per_page' => 5, 'post_status' =>'any', 'post_parent' => $post->ID, 'orderby' => 'menu_order', 'order' => 'DESC' );
             $attachments = get_posts( $args );
-            $thumb_ID = get_post_thumbnail_id( $post->ID );
+            // $thumb_ID = get_post_thumbnail_id( $post->ID );
               if ( $attachments ) {
+                $i = 0;
                 foreach ( $attachments as $attachment ) {
-                  if ($attachment->ID == $thumb_ID ) {
+                  if ( ++$i === 5/*$attachment->ID == $thumb_ID */) {
                     $attachmentimage=wp_get_attachment_image_src( $attachment->ID, true );
 
                   echo '<figure class="seance-main"><a href="'.esc_url(get_permalink()).'"> <img src="'.$attachmentimage[0] .  '"</a></figure>';
