@@ -45,7 +45,11 @@
 
 
         <?php  $query = new WP_Query(  array('category_name' =>  'street-style, Street Style', 'posts_per_page'=> 8 ));
-          if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+          if ($query->have_posts()) {
+            $i = 0;
+            while ($query->have_posts()) : $query->the_post();
+
+            ?>
 
             <!-- <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article"> -->
 
@@ -54,15 +58,25 @@
               <a href="<?php echo  esc_url(get_permalink()); ?>">
                 <?php if ( has_post_thumbnail() ) {
                   $pickbetween = array('street-style-tall', 'street-style-short');
-                  the_post_thumbnail(shuffle($pickbetween)[0]);
+
+                  if (++$i % 2 === 0) {
+                    echo $i.' even';
+                    the_post_thumbnail($pickbetween[0]);
+                  } else {
+                    echo $i.' odd';
+                    the_post_thumbnail($pickbetween[1]);
+                  }
+
+
                 } ?>
 
               </a>
-          <?php endwhile; ?>
+
+          <?php  endwhile; ?>
 
           <?php bones_page_navi(); ?>
 
-        <?php endif; ?>
+        <?php } ?>
       </div>
       <!-- </div> -->
 
