@@ -57,7 +57,7 @@
               <!-- <figure class='snapshot-wrapper'> -->
               <a href="<?php echo  esc_url(get_permalink()); ?>">
                 <?php if ( has_post_thumbnail() ) {
-                  the_post_thumbnail('medium');
+                  the_post_thumbnail('large');
                 } ?>
 
               </a>
@@ -115,7 +115,7 @@
               <!-- <figure class='snapshot-wrapper'> -->
               <a href="<?php echo  esc_url(get_permalink()); ?>">
                 <?php if ( has_post_thumbnail() ) {
-                  the_post_thumbnail('medium');
+                  the_post_thumbnail('large');
                 } ?>
               </a>
           <?php endwhile; ?>
