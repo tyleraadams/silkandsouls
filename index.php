@@ -57,17 +57,7 @@
               <!-- <figure class='snapshot-wrapper'> -->
               <a href="<?php echo  esc_url(get_permalink()); ?>">
                 <?php if ( has_post_thumbnail() ) {
-                  $pickbetween = array('street-style-tall', 'street-style-short');
-
-                  if (++$i % 2 === 0) {
-                    echo $i.' even';
-                    the_post_thumbnail($pickbetween[0]);
-                  } else {
-                    echo $i.' odd';
-                    the_post_thumbnail($pickbetween[1]);
-                  }
-
-
+                  the_post_thumbnail('medium');
                 } ?>
 
               </a>
@@ -125,12 +115,8 @@
               <!-- <figure class='snapshot-wrapper'> -->
               <a href="<?php echo  esc_url(get_permalink()); ?>">
                 <?php if ( has_post_thumbnail() ) {
-                  $pickbetween = array('street-style-tall', 'street-style-short');
-
-                  the_post_thumbnail(shuffle($pickbetween)[0]);
+                  the_post_thumbnail('medium');
                 } ?>
-
-              </a>>
               </a>
           <?php endwhile; ?>
 
