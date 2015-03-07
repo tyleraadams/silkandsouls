@@ -1294,7 +1294,6 @@ body.home article[id^='post'].feature figcaption {
 body.home .collage {
   line-height: 0;
   margin-top: 40px;
-  width: auto;
 }
 /* line 166, ../sass/modules/_landing.scss */
 body.home .collage img {
