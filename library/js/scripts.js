@@ -126,13 +126,44 @@ jQuery(document).ready(function($) {
   handleStreetStyleCat();
 
 
-  $('.collage').imagesLoaded(function(){
-    $('.collage').masonry({
-      columnWidth: 1,
-      itemSelector: 'img'
-    });
+  // $('.collage').imagesLoaded(function(){
+  //   $('.collage').masonry({
+  //     columnWidth: 1,
+  //     itemSelector: 'img'
+  //   });
+
+  var $container  = $('.collage');
+//           $imgs   = $container.find('img').hide(),
+//           totalImgs = $imgs.length,
+//           cnt     = 0;
+
+//         // $imgs.each(function(i) {
+//           var $img  = $(this);
+//           $('<img/>').load(function() {
+//             ++cnt;
+//             if( cnt === totalImgs ) {
+//               $imgs.show();
+//               $container.montage({
+//                 fillLastRow       : true,
+//                 alternateHeight     : true,
+//                 alternateHeightRange  : {
+//                   min : 90,
+//                   max : 240
+//                 }
+//               });
+  // $container.imagesLoaded(function(){
+  //   $container.montage({
+  //     minw : 150,
+  //     fillLastRow       : true,
+  //     alternateHeight     : true
+  //     alternateHeightRange  : {
+  //       min : 100,
+  //       max : 150
+  //     }
+  //   });
+  // });
     // itemSelector: '.item'
-  });
+  // });
   // }).imagesLoaded(function() {
   //  $('.collage').masonry('reload');
   // });

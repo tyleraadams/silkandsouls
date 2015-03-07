@@ -54,14 +54,14 @@
             <!-- <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article"> -->
 
               <!-- <header class="article-header"> -->
-              <!-- <figure class='snapshot-wrapper'> -->
+              <figure class='street-snap-wrapper'>
               <a href="<?php echo  esc_url(get_permalink()); ?>">
                 <?php if ( has_post_thumbnail() ) {
                   the_post_thumbnail('large');
                 } ?>
 
               </a>
-
+              </figure>
           <?php  endwhile; ?>
 
           <?php bones_page_navi(); ?>
@@ -106,18 +106,19 @@
              <!-- <div class="street-style-wrapper"> -->
         <div class="collage">
 
-        <?php  $query = new WP_Query(  array('category_name' =>  'street-style', 'posts_per_page'=> 6, 'offset'=>6 ));
+        <?php  $query = new WP_Query(  array('category_name' =>  'street-style', 'posts_per_page'=> 8, 'offset'=>8 ));
           if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
 
             <!-- <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article"> -->
 
               <!-- <header class="article-header"> -->
-              <!-- <figure class='snapshot-wrapper'> -->
+              <figure class='street-snap-wrapper'>
               <a href="<?php echo  esc_url(get_permalink()); ?>">
                 <?php if ( has_post_thumbnail() ) {
                   the_post_thumbnail('large');
                 } ?>
               </a>
+              </figure>
           <?php endwhile; ?>
 
           <?php bones_page_navi(); ?>

@@ -130,7 +130,9 @@ function bones_scripts_and_styles() {
     wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
 
-    wp_register_script( 'masonry', get_stylesheet_directory_uri() . '/library/js/libs/masonry.pkgd.min.js', array(), '3.2.2', false );
+    wp_register_script( 'jquery-montage', get_stylesheet_directory_uri() . '/library/js/libs/jquery.montage.min.js', array(), '1.0.0', false );
+
+     wp_register_script( 'masonry', get_stylesheet_directory_uri() . '/library/js/libs/masonry.pkgd.min.js', array(), '3.2.2', false );
 
     wp_register_script( 'imagesloaded', get_stylesheet_directory_uri() . '/library/js/libs/imagesloaded.pkgd.min.js', array(), '3.1.8', false );
 
@@ -151,7 +153,7 @@ function bones_scripts_and_styles() {
 		// enqueue styles and scripts
     wp_enqueue_script( 'bones-modernizr' );
     wp_enqueue_script( 'masonry' );
-		wp_enqueue_script( 'imagesloaded' );
+    wp_enqueue_script( 'imagesloaded' );
 		wp_enqueue_style( 'bones-stylesheet' );
 		wp_enqueue_style( 'bones-ie-only' );
 
@@ -163,6 +165,7 @@ function bones_scripts_and_styles() {
 		and your site will load faster.
 		*/
 		wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'jquery-montage' );
     wp_enqueue_script( 'bones-js' );
 	}
 }
