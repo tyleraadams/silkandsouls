@@ -124,11 +124,15 @@ jQuery(document).ready(function($) {
   */
   loadGravatars();
   handleStreetStyleCat();
-  $('.collage').masonry({
-    columnWidth: 1,
-    itemSelector: 'img'
-  });
+
+
+  $('.collage').imagesLoaded(function(){
+    $('.collage').masonry({
+      columnWidth: 1,
+      itemSelector: 'img'
+    });
     // itemSelector: '.item'
+  });
   // }).imagesLoaded(function() {
   //  $('.collage').masonry('reload');
   // });
