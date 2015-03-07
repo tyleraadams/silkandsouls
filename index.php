@@ -22,11 +22,11 @@
                 $i = 0;
                 foreach ( $attachments as $attachment ) {
                   if ( ++$i === 5/*$attachment->ID == $thumb_ID */) {
-                    $attachmentimage=wp_get_attachment_image_src( $attachment->ID, 'seance-main' );
+                    $attachmentimage=wp_get_attachment_image_src( $attachment->ID, 'large' );
 
                   echo '<figure class="seance-main"><a href="'.esc_url(get_permalink()).'"> <img src="'.$attachmentimage[0] .  '"</a></figure>';
                   } else {
-                  $attachmentimage=wp_get_attachment_image_src( $attachment->ID, 'seance-snapshots' );
+                  $attachmentimage=wp_get_attachment_image_src( $attachment->ID, 'medium' );
                   echo '<figure class="seance-snapshots"><a href="'.esc_url(get_permalink()).'"> <img src="'.$attachmentimage[0] .  '"</a></figure>';
 
                   }
@@ -86,11 +86,11 @@
                 $i = 0;
                 foreach ( $attachments as $attachment ) {
                   if ( ++$i === 5/*$attachment->ID == $thumb_ID */) {
-                    $attachmentimage=wp_get_attachment_image_src( $attachment->ID, 'seance-main' );
+                    $attachmentimage=wp_get_attachment_image_src( $attachment->ID, 'large' );
 
                   echo '<figure class="seance-main"><a href="'.esc_url(get_permalink()).'"> <img src="'.$attachmentimage[0] .  '"</a></figure>';
                   } else {
-                  $attachmentimage=wp_get_attachment_image_src( $attachment->ID, 'seance-snapshots' );
+                  $attachmentimage=wp_get_attachment_image_src( $attachment->ID, 'medium' );
                   echo '<figure class="seance-snapshots"><a href="'.esc_url(get_permalink()).'"> <img src="'.$attachmentimage[0] .  '"</a></figure>';
 
                   }

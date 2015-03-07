@@ -2,7 +2,8 @@
 body.home {
 
   #main {
-    @include container();
+    max-width: 850px;
+    margin:0 auto;
   }
 
 
