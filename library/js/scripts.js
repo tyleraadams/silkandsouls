@@ -125,7 +125,7 @@ jQuery(document).ready(function($) {
   loadGravatars();
   handleStreetStyleCat();
   $('.collage').masonry({
-    columnWidth: 60, itemSelector: 'img', "isFitWidth": true });
+    columnWidth: 1, itemSelector: 'img', "isFitWidth": true });
     // itemSelector: '.item'
   // }).imagesLoaded(function() {
   //  $('.collage').masonry('reload');

@@ -1299,6 +1299,8 @@ body.home .collage {
 /* line 166, ../sass/modules/_landing.scss */
 body.home .collage img {
   margin: 0;
+  width: 33%;
+  height: auto;
 }
 
 /* line 2, ../sass/modules/_categories-list.scss */
