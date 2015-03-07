@@ -44,7 +44,7 @@
         <div class="collage">
 
 
-        <?php  $query = new WP_Query(  array('category_name' =>  'street-style, Street Style', 'posts_per_page'=> 8 ));
+        <?php  $query = new WP_Query(  array('category_name' =>  'street-style, Street Style', 'posts_per_page'=> 6 ));
           if ($query->have_posts()) {
             $i = 0;
             while ($query->have_posts()) : $query->the_post();
@@ -57,7 +57,7 @@
               <!-- <figure class='snapshot-wrapper'> -->
               <a href="<?php echo  esc_url(get_permalink()); ?>">
                 <?php if ( has_post_thumbnail() ) {
-                  the_post_thumbnail('large');
+                  the_post_thumbnail('medium');
                 } ?>
 
               </a>
@@ -115,7 +115,7 @@
               <!-- <figure class='snapshot-wrapper'> -->
               <a href="<?php echo  esc_url(get_permalink()); ?>">
                 <?php if ( has_post_thumbnail() ) {
-                  the_post_thumbnail('large');
+                  the_post_thumbnail('medium');
                 } ?>
               </a>
           <?php endwhile; ?>
